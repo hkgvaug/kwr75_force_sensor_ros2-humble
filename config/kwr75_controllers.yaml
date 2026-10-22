@@ -1,0 +1,11 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # this can be set to 1000 max, I reduced it to 100 otherwise plotting in rqt is too slow
+
+    fts_broadcaster:
+      type: force_torque_sensor_broadcaster/ForceTorqueSensorBroadcaster
+
+fts_broadcaster:
+  ros__parameters:
+    sensor_name: kwr75_force_sensor
+    frame_id: fts_link
